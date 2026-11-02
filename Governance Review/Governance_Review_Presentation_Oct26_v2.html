@@ -615,7 +615,7 @@
         </div>
     </div>
 
-    <!-- Slide 4: Org Chart Detailed Slide -->
+<!-- Slide 4: Org Chart Detailed Slide -->
 <div class="slide page-break-before" id="slide-4">
     <div class="slide-category">Module 1: Organisational Architecture</div>
     <h2>Proposed Organisational &amp; Portfolio Structure</h2>
@@ -653,7 +653,8 @@
                 .txt-d-body { font-family: system-ui, sans-serif; font-size: 9px; fill: #334155; }
 
                 .line-solid { stroke: #1b3b2b; stroke-width: 2; fill: none; }
-                .label-tag { font-family: system-ui, sans-serif; font-size: 8.5px; fill: #1b3b2b; font-weight: 600; font-style: italic; }
+                .line-dashed { stroke: #2c5e43; stroke-width: 1.5; stroke-dasharray: 4,4; fill: none; }
+                .label-tag { font-family: system-ui, sans-serif; font-size: 8.5px; fill: #2c5e43; font-weight: 600; font-style: italic; }
             </style>
 
             <!-- CONNECTORS -->
@@ -667,12 +668,20 @@
             <!-- Direct Operations Chair to Estate Manager -->
             <path d="M 460 185 L 460 220" class="line-solid" />
 
+            <!-- DASHED LINE: ARC Chair to Estate Manager -->
+            <path d="M 170 185 L 170 202 L 320 202 L 320 220" class="line-dashed" />
+            <text x="235" y="197" class="label-tag">ARC Framework</text>
+
+            <!-- DASHED LINE: Finance Chair to Estate Manager -->
+            <path d="M 750 185 L 750 202 L 600 202 L 600 220" class="line-dashed" />
+            <text x="680" y="197" class="label-tag">Financial Liaison</text>
+
             <!-- Estate Manager to Field & Operations Staff -->
-            <path d="M 460 305 L 460 330 L 460 345" class="line-solid" />
+            <path d="M 460 305 L 460 345" class="line-solid" />
 
             <!-- SOLID ROUTED LINE: Board Chair to HOA Administrator (Outer Perimeter Route) -->
             <path d="M 760 40 L 900 40 L 900 480 L 870 480" class="line-solid" />
-            <text x="895" y="260" text-anchor="middle" class="label-tag" transform="rotate(90 895 260)">Direct Line (Board Chair)</text>
+            <text x="895" y="260" text-anchor="middle" class="label-tag" transform="rotate(90 895 260)" fill="#1b3b2b">Direct Line (Board Chair)</text>
 
             <!-- NODES -->
             <!-- Board of Directors -->
@@ -731,6 +740,10 @@
         </svg>
     </div>
 
+    <div class="card-governance" style="border-left-color: var(--accent-color); background-color: #fefce8; margin-top: 15px;">
+        <h3 style="color: #854d0e; font-size: 0.95rem; margin-bottom: 4px;">* Governance &amp; Cross-Functional Structure Note</h3>
+        <p style="font-size: 0.85rem; color: #713f12; margin: 0;">This chart illustrates direct solid reporting from the Board Chair to the HOA Administrator, solid direct reporting from the Operations Chair to the Estate Manager, and dashed liaison connections between the Estate Manager and both the ARC and Finance portfolios.</p>
+    </div>
 </div>
 
     <!-- Standalone Operations Committee Scope Slide -->
