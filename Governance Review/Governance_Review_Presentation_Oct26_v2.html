@@ -616,129 +616,133 @@
     </div>
 
     <!-- Slide 4: Org Chart Detailed Slide -->
-    <div class="slide page-break-before" id="slide-4">
-        <div class="slide-category">Module 1: Organisational Architecture</div>
-        <h2>Proposed Organisational & Portfolio Structure</h2>
-        <p class="subtitle">Aligned with Policies, Procedures & Operations Manual (Showing Exact Reporting and Liaison Flows)</p>
+<div class="slide page-break-before" id="slide-4">
+    <div class="slide-category">Module 1: Organisational Architecture</div>
+    <h2>Proposed Organisational &amp; Portfolio Structure</h2>
+    <p class="subtitle">Aligned with Policies, Procedures &amp; Operations Manual (Showing Exact Reporting and Liaison Flows)</p>
 
-        <div class="org-chart-wrapper">
-            <svg viewBox="0 0 920 620" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
-                        <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.06"/>
-                    </filter>
-                </defs>
+    <div class="org-chart-wrapper">
+        <svg viewBox="0 0 920 620" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+                    <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.06"/>
+                </filter>
+            </defs>
 
-                <style>
-                    .box-board { fill: #1b3b2b; stroke: #1b3b2b; rx: 6px; filter: url(#shadow); }
-                    .box-portfolio { fill: #f8fafc; stroke: #2c5e43; stroke-width: 1.5; rx: 6px; filter: url(#shadow); }
-                    .box-em { fill: #ffffff; stroke: #1b3b2b; stroke-width: 2; rx: 6px; filter: url(#shadow); }
-                    .box-dept { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.5; rx: 6px; filter: url(#shadow); }
+            <style>
+                .box-board { fill: #1b3b2b; stroke: #1b3b2b; rx: 6px; filter: url(#shadow); }
+                .box-portfolio { fill: #f8fafc; stroke: #2c5e43; stroke-width: 1.5; rx: 6px; filter: url(#shadow); }
+                .box-em { fill: #ffffff; stroke: #1b3b2b; stroke-width: 2; rx: 6px; filter: url(#shadow); }
+                .box-dept { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.5; rx: 6px; filter: url(#shadow); }
 
-                    .txt-title { font-family: system-ui, sans-serif; font-weight: 700; font-size: 13px; fill: #ffffff; letter-spacing: 0.5px; }
-                    .txt-sub { font-family: system-ui, sans-serif; font-size: 10px; fill: #d4af37; font-weight: 600; }
-                    .txt-desc { font-family: system-ui, sans-serif; font-size: 9.5px; fill: #e2e8f0; }
+                .txt-title { font-family: system-ui, sans-serif; font-weight: 700; font-size: 13px; fill: #ffffff; letter-spacing: 0.5px; }
+                .txt-sub { font-family: system-ui, sans-serif; font-size: 10px; fill: #d4af37; font-weight: 600; }
+                .txt-desc { font-family: system-ui, sans-serif; font-size: 9.5px; fill: #e2e8f0; }
 
-                    .txt-p-title { font-family: system-ui, sans-serif; font-weight: 700; font-size: 11px; fill: #1b3b2b; }
-                    .txt-p-sub { font-family: system-ui, sans-serif; font-size: 9px; fill: #d4af37; font-weight: 700; }
-                    .txt-p-desc { font-family: system-ui, sans-serif; font-size: 9px; fill: #475569; }
+                .txt-p-title { font-family: system-ui, sans-serif; font-weight: 700; font-size: 11px; fill: #1b3b2b; }
+                .txt-p-sub { font-family: system-ui, sans-serif; font-size: 9px; fill: #d4af37; font-weight: 700; }
+                .txt-p-desc { font-family: system-ui, sans-serif; font-size: 9px; fill: #475569; }
 
-                    .txt-em-title { font-family: system-ui, sans-serif; font-weight: 700; font-size: 12px; fill: #1b3b2b; }
-                    .txt-em-sub { font-family: system-ui, sans-serif; font-weight: 700; font-size: 11px; fill: #2c5e43; }
-                    .txt-em-desc { font-family: system-ui, sans-serif; font-size: 9.5px; fill: #475569; }
+                .txt-em-title { font-family: system-ui, sans-serif; font-weight: 700; font-size: 12px; fill: #1b3b2b; }
+                .txt-em-sub { font-family: system-ui, sans-serif; font-weight: 700; font-size: 11px; fill: #2c5e43; }
+                .txt-em-desc { font-family: system-ui, sans-serif; font-size: 9.5px; fill: #475569; }
 
-                    .txt-d-header { font-family: system-ui, sans-serif; font-weight: 700; font-size: 11px; fill: #1b3b2b; letter-spacing: 0.5px; }
-                    .txt-d-title { font-family: system-ui, sans-serif; font-weight: 600; font-size: 10px; fill: #2c5e43; }
-                    .txt-d-body { font-family: system-ui, sans-serif; font-size: 9px; fill: #334155; }
+                .txt-d-header { font-family: system-ui, sans-serif; font-weight: 700; font-size: 11px; fill: #1b3b2b; letter-spacing: 0.5px; }
+                .txt-d-title { font-family: system-ui, sans-serif; font-weight: 600; font-size: 10px; fill: #2c5e43; }
+                .txt-d-body { font-family: system-ui, sans-serif; font-size: 9px; fill: #334155; }
 
-                    .line-solid { stroke: #1b3b2b; stroke-width: 2; fill: none; }
-                    .line-dashed { stroke: #2c5e43; stroke-width: 1.5; stroke-dasharray: 4,4; fill: none; }
-                    .label-tag { font-family: system-ui, sans-serif; font-size: 8.5px; fill: #2c5e43; font-weight: 600; font-style: italic; }
-                </style>
+                .line-solid { stroke: #1b3b2b; stroke-width: 2; fill: none; }
+                .line-dashed { stroke: #2c5e43; stroke-width: 1.5; stroke-dasharray: 4,4; fill: none; }
+                .label-tag { font-family: system-ui, sans-serif; font-size: 8.5px; fill: #2c5e43; font-weight: 600; font-style: italic; }
+            </style>
 
-                <!-- CONNECTORS -->
-                <path d="M 460 70 L 460 95" class="line-solid" />
-                <path d="M 170 95 L 750 95" class="line-solid" />
-                <path d="M 170 95 L 170 115" class="line-solid" />
-                <path d="M 460 95 L 460 115" class="line-solid" />
-                <path d="M 750 95 L 750 115" class="line-solid" />
-                
-                <!-- Horizontal cross-consultation links -->
-                <path d="M 290 150 L 340 150" class="line-dashed" />
-                <path d="M 580 150 L 630 150" class="line-dashed" />
+            <!-- CONNECTORS -->
+            <path d="M 460 70 L 460 95" class="line-solid" />
+            <path d="M 170 95 L 750 95" class="line-solid" />
+            <path d="M 170 95 L 170 115" class="line-solid" />
+            <path d="M 460 95 L 460 115" class="line-solid" />
+            <path d="M 750 95 L 750 115" class="line-solid" />
+            
+            <!-- Horizontal cross-consultation links -->
+            <path d="M 290 150 L 340 150" class="line-dashed" />
+            <path d="M 580 150 L 630 150" class="line-dashed" />
 
-                <!-- Main direct line reporting from Operations Chair to Estate Manager -->
-                <path d="M 460 185 L 460 245" class="line-solid" />
-                
-                <!-- ARC Liaison -->
-                <path d="M 170 185 L 170 215 L 390 215 L 390 265" class="line-dashed" />
-                <text x="260" y="208" class="label-tag">ARC Framework</text>
-                
-                <!-- Finance Liaison -->
-                <path d="M 750 185 L 750 215 L 530 215 L 530 265" class="line-dashed" />
-                <text x="630" y="208" class="label-tag">Financial Liaison</text>
+            <!-- Direct Line: Board Chair to HOA Administrator -->
+            <path d="M 200 70 L 200 370 L 140 370 L 140 395" class="line-dashed" />
+            <text x="145" y="290" class="label-tag">Direct Line (Board Chair)</text>
 
-                <path d="M 460 340 L 460 370" class="line-solid" />
-                <path d="M 230 370 L 690 370" class="line-solid" />
-                <path d="M 230 370 L 230 395" class="line-solid" />
-                <path d="M 690 370 L 690 395" class="line-solid" />
+            <!-- Main direct line reporting from Operations Chair to Estate Manager -->
+            <path d="M 460 185 L 460 245" class="line-solid" />
+            
+            <!-- ARC Liaison -->
+            <path d="M 170 185 L 170 215 L 390 215 L 390 265" class="line-dashed" />
+            <text x="260" y="208" class="label-tag">ARC Framework</text>
+            
+            <!-- Finance Liaison -->
+            <path d="M 750 185 L 750 215 L 530 215 L 530 265" class="line-dashed" />
+            <text x="630" y="208" class="label-tag">Financial Liaison</text>
 
-                <!-- NODES -->
-                <rect x="160" y="10" width="600" height="60" class="box-board" />
-                <text x="460" y="27" text-anchor="middle" class="txt-title">BOARD OF DIRECTORS</text>
-                <text x="460" y="41" text-anchor="middle" class="txt-sub">BOARD CHAIRN</text>
-                <text x="460" y="55" text-anchor="middle" class="txt-desc">Ultimate Fiduciary Responsibility, Statutory Compliance &amp; MOI Governance</text>
+            <path d="M 460 340 L 460 370" class="line-solid" />
+            <path d="M 230 370 L 690 370" class="line-solid" />
+            <path d="M 230 370 L 230 395" class="line-solid" />
+            <path d="M 690 370 L 690 395" class="line-solid" />
 
-                <!-- Left Portfolio: ARC -->
-                <rect x="50" y="115" width="240" height="70" class="box-portfolio" />
-                <text x="170" y="133" text-anchor="middle" class="txt-p-title">ARCHITECTURAL REVIEW COMMITTEE</text>
-                <text x="170" y="147" text-anchor="middle" class="txt-p-sub">ARC CHAIR</text>
-                <text x="170" y="163" text-anchor="middle" class="txt-p-desc">Architectural Control &amp; Site Inspections</text>
+            <!-- NODES -->
+            <rect x="160" y="10" width="600" height="60" class="box-board" />
+            <text x="460" y="27" text-anchor="middle" class="txt-title">BOARD OF DIRECTORS</text>
+            <text x="460" y="41" text-anchor="middle" class="txt-sub">BOARD CHAIR</text>
+            <text x="460" y="55" text-anchor="middle" class="txt-desc">Ultimate Fiduciary Responsibility, Statutory Compliance &amp; MOI Governance</text>
 
-                <!-- Center Portfolio: Operations -->
-                <rect x="340" y="115" width="240" height="70" class="box-portfolio" style="border-width: 2px;" />
-                <text x="460" y="133" text-anchor="middle" class="txt-p-title">OPERATIONS COMMITTEE</text>
-                <text x="460" y="147" text-anchor="middle" class="txt-p-sub">OPERATIONS CHAIR</text>
-                <text x="460" y="163" text-anchor="middle" class="txt-p-desc">Strategic Operational Oversight &amp; Executive Support</text>
+            <!-- Left Portfolio: ARC -->
+            <rect x="50" y="115" width="240" height="70" class="box-portfolio" />
+            <text x="170" y="133" text-anchor="middle" class="txt-p-title">ARCHITECTURAL REVIEW COMMITTEE</text>
+            <text x="170" y="147" text-anchor="middle" class="txt-p-sub">ARC CHAIR</text>
+            <text x="170" y="163" text-anchor="middle" class="txt-p-desc">Architectural Control &amp; Site Inspections</text>
 
-                <!-- Right Portfolio: Finance -->
-                <rect x="630" y="115" width="240" height="70" class="box-portfolio" />
-                <text x="750" y="133" text-anchor="middle" class="txt-p-title">FINANCE COMMITTEE</text>
-                <text x="750" y="147" text-anchor="middle" class="txt-p-sub">FINANCE CHAIR</text>
-                <text x="750" y="163" text-anchor="middle" class="txt-p-desc">Budgets, Accounts &amp; Financial Compliance</text>
+            <!-- Center Portfolio: Operations -->
+            <rect x="340" y="115" width="240" height="70" class="box-portfolio" style="border-width: 2px;" />
+            <text x="460" y="133" text-anchor="middle" class="txt-p-title">OPERATIONS COMMITTEE</text>
+            <text x="460" y="147" text-anchor="middle" class="txt-p-sub">OPERATIONS CHAIR</text>
+            <text x="460" y="163" text-anchor="middle" class="txt-p-desc">Strategic Operational Oversight &amp; Executive Support</text>
 
-                <rect x="310" y="245" width="300" height="95" class="box-em" />
-                <text x="460" y="267" text-anchor="middle" class="txt-em-title">OPERATIONS MANAGEMENT</text>
-                <text x="460" y="284" text-anchor="middle" class="txt-em-sub">ESTATE MANAGER</text>
-                <text x="460" y="304" text-anchor="middle" class="txt-em-desc">Overall Field Execution, Staff Leadership &amp; Administration</text>
-                <text x="460" y="322" text-anchor="middle" class="txt-em-desc" font-style="italic" fill="#1b3b2b">Direct Line Reporting to Operations Chair</text>
+            <!-- Right Portfolio: Finance -->
+            <rect x="630" y="115" width="240" height="70" class="box-portfolio" />
+            <text x="750" y="133" text-anchor="middle" class="txt-p-title">FINANCE COMMITTEE</text>
+            <text x="750" y="147" text-anchor="middle" class="txt-p-sub">FINANCE CHAIR</text>
+            <text x="750" y="163" text-anchor="middle" class="txt-p-desc">Budgets, Accounts &amp; Financial Compliance</text>
 
-                <rect x="50" y="395" width="360" height="205" class="box-dept" />
-                <text x="230" y="418" text-anchor="middle" class="txt-d-header">ADMINISTRATION STAFF</text>
-                <text x="70" y="445" class="txt-d-title">HOA Administrator*</text>
-                <text x="70" y="462" class="txt-d-body">• Records, Assets, Manuals &amp; Documentation Governance</text>
-                <text x="70" y="478" class="txt-d-body">• Levy Metering Readings, Key Register &amp; Office Support</text>
-                <text x="70" y="510" class="txt-d-title">Receptionist &amp; Desk Support</text>
-                <text x="70" y="527" class="txt-d-body">• Absenteeism Management &amp; Desk Operations</text>
-                <text x="70" y="543" class="txt-d-body">• Homeowner Communications, Queries &amp; Atinteam Loging</text>
+            <rect x="310" y="245" width="300" height="95" class="box-em" />
+            <text x="460" y="267" text-anchor="middle" class="txt-em-title">OPERATIONS MANAGEMENT</text>
+            <text x="460" y="284" text-anchor="middle" class="txt-em-sub">ESTATE MANAGER</text>
+            <text x="460" y="304" text-anchor="middle" class="txt-em-desc">Overall Field Execution, Staff Leadership &amp; Administration</text>
+            <text x="460" y="322" text-anchor="middle" class="txt-em-desc" font-style="italic" fill="#1b3b2b">Direct Line Reporting to Operations Chair</text>
 
-                <rect x="510" y="395" width="360" height="205" class="box-dept" />
-                <text x="690" y="418" text-anchor="middle" class="txt-d-header">FIELD &amp; OPERATIONS STAFF</text>
-                <text x="530" y="445" class="txt-d-title">Supervisor: Manqoba Amos Ndaba</text>
-                <text x="530" y="462" class="txt-d-body">• Ground Staff Supervision, Water Plant &amp; Fuel Management</text>
-                <text x="530" y="478" class="txt-d-body">• Firebreaks, Perimeter Clearing &amp; Maintenance Supervision</text>
-                <text x="530" y="510" class="txt-d-title">Maintenance Assistant &amp; General Field Workers</text>
-                <text x="530" y="527" class="txt-d-body">• Maintenance Assistant: Mr. Khumalo</text>
-                <text x="530" y="543" class="txt-d-body">• General Workers: Nestingila, Sikmakhane, Mazibuko, Shabalala</text>
-                <text x="530" y="560" class="txt-d-body" font-style="italic" fill="#64748b">• Security SLA, Roads, Wildlife &amp; Infrastructure Execution</text>
-            </svg>
-        </div>
+            <rect x="50" y="395" width="360" height="205" class="box-dept" />
+            <text x="230" y="418" text-anchor="middle" class="txt-d-header">ADMINISTRATION STAFF</text>
+            <text x="70" y="445" class="txt-d-title">HOA Administrator*</text>
+            <text x="70" y="462" class="txt-d-body">• Records, Assets, Manuals &amp; Documentation Governance</text>
+            <text x="70" y="478" class="txt-d-body">• Levy Metering Readings, Key Register &amp; Office Support</text>
+            <text x="70" y="510" class="txt-d-title">Receptionist &amp; Desk Support</text>
+            <text x="70" y="527" class="txt-d-body">• Absenteeism Management &amp; Desk Operations</text>
+            <text x="70" y="543" class="txt-d-body">• Homeowner Communications, Queries &amp; Atinteam Logging</text>
 
-        <div class="card-governance" style="border-left-color: var(--accent-color); background-color: #fefce8; margin-top: 15px;">
-            <h3 style="color: #854d0e; font-size: 0.95rem; margin-bottom: 4px;">* Governance Consideration Note</h3>
-            <p style="font-size: 0.85rem; color: #713f12; margin: 0;">This org chart reflects current estate policies and employee contracts. For consideration, however, is whether the Administrator role should report directly to the Board Chair given that, in practice, the role spans all estate functions.</p>
-        </div>
+            <rect x="510" y="395" width="360" height="205" class="box-dept" />
+            <text x="690" y="418" text-anchor="middle" class="txt-d-header">FIELD &amp; OPERATIONS STAFF</text>
+            <text x="530" y="445" class="txt-d-title">Supervisor: Manqoba Amos Ndaba</text>
+            <text x="530" y="462" class="txt-d-body">• Ground Staff Supervision, Water Plant &amp; Fuel Management</text>
+            <text x="530" y="478" class="txt-d-body">• Firebreaks, Perimeter Clearing &amp; Maintenance Supervision</text>
+            <text x="530" y="510" class="txt-d-title">Maintenance Assistant &amp; General Field Workers</text>
+            <text x="530" y="527" class="txt-d-body">• Maintenance Assistant: Mr. Khumalo</text>
+            <text x="530" y="543" class="txt-d-body">• General Workers: Nestingila, Sikmakhane, Mazibuko, Shabalala</text>
+            <text x="530" y="560" class="txt-d-body" font-style="italic" fill="#64748b">• Security SLA, Roads, Wildlife &amp; Infrastructure Execution</text>
+        </svg>
     </div>
+
+    <div class="card-governance" style="border-left-color: var(--accent-color); background-color: #fefce8; margin-top: 15px;">
+        <h3 style="color: #854d0e; font-size: 0.95rem; margin-bottom: 4px;">* Governance Consideration Note</h3>
+        <p style="font-size: 0.85rem; color: #713f12; margin: 0;">This org chart reflects the updated governance structure where the HOA Administrator reports directly to the Board Chair, aligning with cross-portfolio governance responsibilities while maintaining operational support flow with the Estate Manager.</p>
+    </div>
+</div>
 
     <!-- Standalone Operations Committee Scope Slide -->
     <div class="slide page-break-before" id="slide-ops-scope">
